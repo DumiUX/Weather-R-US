@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather R’US</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container" id="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginBtn">Login</button>
+        </div>
+    </div>
+
+    <div class="dashboard-container" id="dashboard-container">
+        <aside class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                  <li>
+                    <a href="index.html" class="sidebar-link">
+                      <i class="fa-solid fa-house"></i>
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="sidebar-link">
+                      <i class="fa-solid fa-gear fa-fw"></i>
+                      <span>Anomalies</span>
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="sidebar-link">
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                    </i><span>Alerts</span>
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="sidebar-link">
+                      <i class="fa-solid fa-location-dot"></i>
+                      </i><span>Saved Locations</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="sidebar-link">
+                      <i class="fa-solid fa-gear fa-fw"></i>
+                      <span>Settings</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="top-bar">
+                <div class="search-bar">
+                    <input type="text" id="cityInput" placeholder="Search city">
+                    <button id="searchBtn">Search</button>
+                    <button id="locationBtn">Use Current Location</button>
+                </div>
+                <div class="icons">
+                    <span>🔔</span>
+                    <span>👤</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4" id="current-weather">Current Weather</div>
+                <div class="col-2">Day 1</div>
+                <div class="col-2">Day 2</div>
+                <div class="col-2">Day 3</div>
+                <div class="col-2">Day 4</div>
+                <div class="col-2">Day 5</div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">Anomalies</div>
+                <div class="col-2">Wind Speed</div>
+                <div class="col-2">Humidity</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
