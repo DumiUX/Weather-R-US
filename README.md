@@ -1,6 +1,7 @@
 # Weather-R-US
 A solution to keep track of weather conditions
-How It Works:
+
+**How It Works:**
 
 **Login System:**
 
