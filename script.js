@@ -12,10 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const currentWeatherDiv = document.getElementById("current-weather");
 
-    // Dummy login credentials
     const validUser = { username: "user", password: "pass123" };
 
-    // Login Function
     loginBtn.addEventListener("click", function () {
         if (username.value === validUser.username && password.value === validUser.password) {
             loginContainer.style.display = "none";
@@ -26,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Fetch Weather Function
     async function fetchWeather(city) {
         const apiKey = "YOUR_OPENWEATHERMAP_API_KEY";
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
@@ -49,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Search Button Event
     searchBtn.addEventListener("click", function () {
         if (cityInput.value) {
             fetchWeather(cityInput.value);
@@ -58,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Get Current Location Weather
     locationBtn.addEventListener("click", function () {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(async function (position) {
